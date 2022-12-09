@@ -44,7 +44,7 @@ span {
     column-gap: 10px;
     align-items: center;
     width: 100%;
-    height: 12%;
+    height: 4rem;
     position: absolute;
 }
 
@@ -96,14 +96,6 @@ span {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropbtn {
-    animation-name: navbar-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
 }
 
 .column {
@@ -207,32 +199,14 @@ h3 {
 
 .man {
     padding-right: 6%;
-
-    animation-name: navbar-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
 }
 
 .new-in {
     padding-right: 6%;
-
-    animation-name: navbar-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
 }
 
 .outlet {
     padding-right: 6%;
-
-    animation-name: navbar-animation;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
 }
 
 .asp {
@@ -259,14 +233,17 @@ h3 {
 
 .search_icon {
     float: right;
+    width: 16px;
 }
 
 .bag_icon {
     float: right;
+    width: 16px;
 }
 
 .account-icon {
     float: right;
+    width: 16px;
 }
 
 
@@ -935,9 +912,19 @@ padding-right: 1rem;
 
 
 
+@keyframes logo-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
 @media screen and (max-width:800px) {
     .container {
-        grid-template-rows: 3rem 1fr 15rem;
+        grid-template-rows: 4rem 1fr 15rem;
     }
 
     .front_text_1 {
@@ -1047,6 +1034,12 @@ padding-right: 1rem;
         grid-area: menu;
         display: flex;
         justify-content: center;
+
+        animation-name: logo-animation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
     }
 
     .hamburger-line {
@@ -1156,7 +1149,7 @@ padding-right: 1rem;
 
 @media screen and (max-width: 400px) {
     .container {
-        grid-template-rows: 3rem 1fr 15rem;
+        grid-template-rows: 4rem 1fr 15rem;
     }
 
     .front_text_1 {
@@ -1167,9 +1160,25 @@ padding-right: 1rem;
         font-size: 1.5rem;
     }
 
-    .header {
-        height: 8%;
+    .account-icon {
+        width: 10px;
     }
+
+    .search_icon {
+        width: 10px;
+    }
+
+    .bag_icon {
+        width: 10px;
+    }
+
+    .account {
+        display: flex;
+        justify-content: space-between;
+        width: 60px;
+        padding-right: 20px;
+    }
+    
 
     .hamburger-line {
         display: block;
@@ -1181,17 +1190,9 @@ padding-right: 1rem;
 
 }
 
-@keyframes navbar-animation {
-    0% {
-        color: white;
-    }
-
-    50% {
-        color: orange;
-    }
-
-    100% {
-        color: white;
+@media screen and (max-width: 250px) {
+    .account {
+        display: none;
     }
 }
 
