@@ -1,0 +1,782 @@
+body {
+    margin: 0px;
+    font-family: Inter;
+    /* background-image: url(images/unsplash-background.jpg);
+    background-size: 100vw, 80vh; */
+}
+
+button {
+    border-style: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    font-family: InterSemibold;
+}
+/* https://www.w3schools.com/tags/tag_span.asp */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 6rem 1fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "content content content"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #96A990;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.footer {
+    background-color:  #96A990;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: footer;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    padding-left: 10%;
+    padding-bottom: 14%;
+}
+
+/*cssgrid-generator.netlify.app used to found our grid*/
+
+
+/* --------------------for all of the pages-------------------------- */
+
+
+
+.category {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 1rem;
+    justify-content: left;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.woman {
+    padding-right: 6%;
+}
+
+.man {
+    padding-right: 6%;
+}
+
+.new-in {
+    padding-right: 6%;
+}
+
+.outlet {
+    padding-right: 6%;
+}
+
+.asp {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 10%;
+}
+
+.account {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-items: right;
+}
+.search_icon {
+    padding-right: 10%;
+}
+
+.bag_icon {
+    padding-left: 10%;
+}
+/*fixa mellanrum och justify right*/
+
+
+
+.front_pic {
+    width: 100%;
+}
+
+.front_text_1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 4rem;
+    margin-top: 32%;
+    text-align: left;
+}
+
+.front_text_2 {
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 4rem;
+    margin-top: 37%;
+    text-align: right;
+}
+
+.content {
+    display: grid;
+    display: grid;
+    grid-area: content;
+}
+
+.content_first_page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15%;
+    text-align: center;
+    row-gap: 200px;  
+}
+
+.front_img2 {
+    display: flex;
+    margin-left: 15%;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: 600;
+    padding-top: 10%;
+}
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Inter&display=swap'); */
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: InterLight;
+    src: url(assets/Inter-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: InterSemibold;
+    src: url(assets/Inter-SemiBold.ttf) format('truetype');
+}
+/* https://www.w3schools.com/css/css3_fonts.asp */
+
+
+
+
+
+
+
+
+
+/* --------------- PRODUCT PAGE!--------------- */
+
+
+
+
+
+
+
+
+.container_product_page {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 6rem 4rem 20rem 1fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "block1 block1 block1"
+    "block2 block2 block2"
+    "block3 block3 block3"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.breadcrumbs {
+    grid-area: block1;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.top_content_productpage {
+    display: grid;
+    grid-area: block2;
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 3%;
+}
+
+
+
+/* code from lecture with Garrit */
+
+
+
+.filter {
+    display: flex;
+    background-color:  #96A990;
+    letter-spacing: 4px;
+    align-content:  left;
+    align-items: left;
+    text-align: center;
+    width: 6rem;
+    border-style: hidden;
+}
+
+.woman_rubrik {
+    display: flex;
+    font-weight: 100;
+    letter-spacing: 7px;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 2%;
+}
+
+.blazers_rubrik {
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 0rem;
+
+}
+
+.content_productpage {
+    display: grid;
+    grid-area: block3;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    margin: 8%;
+    margin-top: 0px;
+    justify-items: center;
+    align-content: center;
+}
+
+.product_image {
+    width: 100%;
+    max-height: 100%
+}
+
+/* Pictures from Gina tricot */
+
+.product_text {
+    padding-bottom: 25%;
+}
+
+
+
+
+
+
+
+/* --------------------- item PAGE!-------------------- */
+
+
+
+
+
+
+.container_item_page {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 6rem 4rem 5fr 4fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "block1 block1 block1"
+    "block2 block2 block2"
+    "block3 block3 block3"
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.block1_item_page {
+    grid-area: block1;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.block2_item_page {
+    grid-area: block2;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    column-gap: 3rem;
+    margin: 5%;
+    max-height: 100%;
+}
+
+.block3_item_page {
+    display: grid;
+    grid-area: block3;
+    grid-template-rows: 3rem 7rem 1fr;
+    margin: 5%
+}
+
+/* .item_small {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+    background-color: rgb(72, 121, 164);
+} */
+
+.item_small {
+    background-color: rgb(72, 121, 164);
+    max-height: 90vh;
+}
+
+.small_imgs {
+    max-width: 100%;
+    max-height: auto;
+}
+ /* fråga på lab responsive bilder, row-gap? */
+
+.item_big {
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+    max-height: 90vh;
+}
+
+.item_description {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 6fr;
+    max-height: 90vh;
+}
+
+.colour_button {
+    display: flex;
+    background-color:  #d9d9d9;
+    letter-spacing: 4px;
+    max-width: 30rem;
+    height: 2rem;
+    border-style: hidden;
+    justify-content: right;
+    align-items: center;
+}
+
+.size_guide {
+    font-size: 11px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: right;
+    max-width: 30rem;
+    padding-top: 6%;
+}
+
+.size_buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    padding-bottom: 4%;
+}
+
+.size_button {
+    width: 12%;
+    height: 100%;
+    background-color:  #d9d9d9;
+}
+
+.size_buttons button:hover {
+    background-color: black;
+    color: white;
+}
+
+.add_to_bag {
+    display: flex;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    max-width: 30rem;
+    max-height: 2rem;
+    font-family: InterSemibold;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_to_bag p:hover {
+    color: orange;
+}
+
+.free_shipping_text {
+    display: flex;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    justify-content: right;
+    max-width: 30rem;
+    text-align: start;
+}
+
+.rubrik_description {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: InterSemibold;
+}
+
+.description_text {
+    /* font-size: 11px; */
+    max-width: 30rem;
+    font-family: InterLight;
+    line-height: 18px;
+}
+
+.style_with_text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    letter-spacing: 2px;
+    font-family: InterLight;
+    margin-bottom: 2%;
+    font-size: 17px;
+    
+}
+
+.style_with_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    margin: 8%;
+    margin-top: 0px;
+    justify-items: center;
+    align-content: center;
+}
+
+
+
+
+
+/* ----------------- bag PAGE ---------------- */
+
+
+
+
+.container_bag_page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 1fr 15rem;
+    grid-template-areas:
+    "header header header" 
+    "content_bag_page content_bag_page content_bag_page"
+    /* "block1 block1 block1"
+    "block2 block2 block2" */
+    "footer footer footer";
+    min-height: 100vh;
+}
+
+.content_bag_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
+}
+
+.block1_bag {
+    /* background-color: rgb(221, 245, 237); */
+    margin: 5%;
+    /* max-width: 40rem; */
+}
+
+.block2_bag {
+    /* background-color: rgb(212, 212, 235); */
+    margin: 5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    letter-spacing: 3px;
+    max-width: 40rem;
+
+}
+
+.value {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: InterLight;
+    line-height: 2rem;
+    font-size: 13px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.value_numbers {
+    display: flex;
+    justify-content: right;
+}
+
+.value_total {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.value_total_numbers {
+    display: flex;
+    justify-content: right;
+}
+
+.proceed_to_checkout {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    margin: 5%;
+    width: 90%;
+    letter-spacing: 4px;
+}
+
+.discount_code {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 5%;
+}
+
+.add {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    letter-spacing: 4px;
+    margin-left: 20%;
+}
+
+.order_text {
+    font-family: InterLight;
+    font-size: 14px;
+    line-height: 3rem;
+}
+.return_text {
+    line-height: 2rem;
+    text-decoration: underline;
+}
+
+.pay_logo {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.pay_logo_img {
+    float: right;
+    width: 10%;
+    padding: 2%;
+}
+
+
+.shoppingbag_items_text {
+    letter-spacing: 3px;
+}
+    
+
+.shoppingbag_items_content {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5%;
+    min-height: 40vh;
+    margin-top: 8%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+.shoppingbag_small_img {
+    width: 80%;
+}
+
+.shoppingbag_text {
+    font-family: InterLight;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.shoppingbag_text_numbers {
+    font-family: InterLight;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.X {
+    display: flex;
+    justify-content: right;
+    margin-right: 40%;
+}
+
+/* -----------------------checkout PAGE ------------- */
+
+
+
+.content_checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+
+}
+
+.block1_checkout {
+    margin: 5%;
+}
+
+.block2_checkout {
+    margin: 5%;
+}
+
+.rubrik_checkout {
+    font-size: 1rem;
+    font-family: InterSemibold;
+    letter-spacing: 4px;
+    margin-top: 4rem;
+}
+
+.text_checkout {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+}
+
+.proceed_to_payment {
+    background-color: black;
+    color: white;
+    font-family: InterSemibold;
+    margin: 5%;
+    width: 90%;
+    letter-spacing: 4px;
+
+}
+
+.block2_checkout{
+    font-size: 11pt;
+    font-family: InterLight;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Alma_checkout{
+    font-family: InterSemibold;
+    font-size: 16px;
+    margin-bottom: 20%;
+
+}
+
+.conteiner_1_checkout{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pris1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.pris1_2{
+    display: flex;
+    justify-content: end;
+}
+.bild_text{
+display: flex;
+flex-direction: row;
+line-height: 170%;
+}
+
+
+.information_checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: InterSemibold;
+}
+
+.pris2 {
+    display: flex;
+}
+
+.text_checkout_2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.total_checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family:InterSemibold 
+}
+
+img{
+max-height: 8rem;
+display: flex;
+
+}
+.pris2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delivery_option {
+    display: grid;
+    grid-template-columns: 1fr 8fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery_rubrik {
+    font-family: InterSemibold;
+    margin-top: 1rem;
+}
+
+.delivery_text {
+    font-size: 11px;
+}
+
+.img_delivery {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.img_delivery_card {
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.dot_button {
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.terms_and_condition {
+    font-size: 11px;
+    font-family: InterLight;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 400px) {
+.content_checkout{
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
