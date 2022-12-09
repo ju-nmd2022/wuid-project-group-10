@@ -24,7 +24,7 @@ span {
 .container {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 5rem 1fr 15rem;
+    grid-template-rows: 4rem 1fr 15rem;
     grid-template-areas:
     "header header header" 
     "content content content"
@@ -937,7 +937,7 @@ padding-right: 1rem;
 
 @media screen and (max-width:800px) {
     .container {
-        grid-template-rows: 8rem 1fr 15rem;
+        grid-template-rows: 3rem 1fr 15rem;
     }
 
     .front_text_1 {
@@ -1156,7 +1156,7 @@ padding-right: 1rem;
 
 @media screen and (max-width: 400px) {
     .container {
-        grid-template-rows: 5rem 1fr 15rem;
+        grid-template-rows: 3rem 1fr 15rem;
     }
 
     .front_text_1 {
